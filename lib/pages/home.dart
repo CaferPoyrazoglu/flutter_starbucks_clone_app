@@ -102,7 +102,6 @@ class _HomePageState extends State<HomePage> {
         children: [
           Icon(
             icon,
-            color: colorBlack,
           ),
           SizedBox(
             width: 4,

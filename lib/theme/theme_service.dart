@@ -29,7 +29,7 @@ class ThemeService {
 class Themes {
   final lightTheme = ThemeData(
     fontFamily: mainFont,
-    iconTheme: const IconThemeData(color: Colors.black),
+    iconTheme: IconThemeData(color: colorGreen, size: 18.0),
   );
   final darkTheme = ThemeData.dark().copyWith(
     primaryColor: color1,
