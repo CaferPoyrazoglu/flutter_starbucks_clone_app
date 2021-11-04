@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-var mainFont = "OpenSans";
+var mainFont = "Varela";
 var width = Get.width;
 var height = Get.height;
-var mainPadding = EdgeInsets.all(16.0);
+var mainPadding = EdgeInsets.all(18.0);
 
 var colorPrimary = Color(0xFFE80822);
 var colorWhite = Colors.white;

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:myapp/theme/theme_data.dart';
-import '../theme/delay_effect.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -26,10 +25,13 @@ class _SplashState extends State<Splash> {
       body: Stack(
         children: [
           Center(
-            child: DelayedDisplay(
-                delay: Duration(milliseconds: 50),
-                child: Image.asset("assets/images/img.png")),
-          ),
+              child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset("assets/images/img.png"),
+            ],
+          )),
         ],
       ),
     );

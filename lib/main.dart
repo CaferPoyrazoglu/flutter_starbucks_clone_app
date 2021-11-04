@@ -16,7 +16,7 @@ void main() async {
     theme: Themes().lightTheme,
     darkTheme: Themes().darkTheme,
     themeMode: ThemeService().getThemeMode(),
-    defaultTransition: Transition.fadeIn,
+    defaultTransition: Transition.leftToRight,
   ));
 }
 

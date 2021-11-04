@@ -23,19 +23,30 @@ class _HomePageState extends State<HomePage> {
 
   bodyGetir() {
     return Column(
-      children: [appBarGetir(), listGetir()],
+      children: [
+        SizedBox(
+          height: height * 0.02,
+        ),
+        appBarGetir(),
+        listGetir()
+      ],
     );
   }
 
   listGetir() {
     return Expanded(
-      child: ListView.builder(
-        physics: BouncingScrollPhysics(),
-        itemCount: c.list.length,
-        itemBuilder: (context, index) => ListItem(
-          baslik: c.list[index].baslik,
-          aciklama: c.list[index].aciklama,
-          resim: c.list[index].resim,
+      child: MediaQuery.removePadding(
+        removeTop: true,
+        context: this.context,
+        child: ListView.builder(
+          physics: BouncingScrollPhysics(),
+          itemCount: c.list.length,
+          itemBuilder: (context, index) => ListItem(
+            baslik: c.list[index].baslik,
+            aciklama: c.list[index].aciklama,
+            resim: c.list[index].resim,
+            butonlar: c.list[index].butonlar,
+          ),
         ),
       ),
     );
@@ -54,6 +65,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               child: CustomHeadline(
                 text: "İyi Günler ☕",
+                fSize: 0.95,
                 myFW: FontWeight.w600,
               ),
             ),
