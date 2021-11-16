@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:myapp/pages/home.dart';
+import 'package:myapp/pages/dashboard.dart';
 import 'pages/splash.dart';
 import 'theme/theme_service.dart';
 
@@ -27,8 +27,8 @@ class AppPages {
       page: () => App(),
     ),
     GetPage(
-      name: "/Home",
-      page: () => HomePage(),
+      name: "/Dashboard",
+      page: () => MyDashBoard(),
     ),
   ];
 }

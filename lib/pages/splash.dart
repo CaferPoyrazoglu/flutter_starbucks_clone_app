@@ -14,7 +14,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () async {
-      Get.offNamed("/Home");
+      Get.offNamed("/Dashboard");
     });
   }
 
